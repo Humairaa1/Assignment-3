@@ -18,6 +18,7 @@
                     colors: {
                         clifford: '#da373d',
                         'pink-color': '#F85559',
+                        'yash-color': '#64748b',
                     }
                 }
             }
@@ -45,7 +46,7 @@
 <body class="lato-font">
     <header class="container mx-auto max-w-6xl">
         <!-- Nav Bar start here  -->
-        <div class="navbar bg-white md:bg-pink-color my-12 px-5 rounded-[50px]">
+        <div class="navbar bg-white md:bg-pink-color my-5 lg:my-12 px-5 rounded-[50px]">
             <div>
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -94,7 +95,7 @@
         <!-- Nav bar END here  -->
 
         <!-- banner section starts  -->
-        <div class="carousel md:w-full h-48 md:h-[500px] ">
+        <div class="carousel md:w-full h-48 md:h-[500px] mx-5">
             <!-- first slide  -->
             <div id="slide1" class="carousel-item relative max-w-full">
                 <!-- Hero section Starts  -->
@@ -176,8 +177,8 @@
           <!-- banner section ends here  -->
 
           <!-- Fruits section starts here  -->
-          <div class="flex justify-center mb-40">
-            <div class="hidden lg:flex justify-around  bg-white max-w-5xl rounded-lg drop-shadow-lg container mx-auto py-5 -mt-20 absolute">
+          <div class="flex justify-center mb-5 lg:mb-40">
+            <div class="hidden lg:flex justify-around  bg-white max-w-5xl rounded-lg drop-shadow-lg container mx-auto text-center py-5 -mt-20 absolute">
                 <div>
                     <img src="images/fruit1.png" alt="">
                     <p>Grape</p>
@@ -204,8 +205,139 @@
         
     </header>
 
-    <main>
+    <main class="container mx-auto max-w-6xl mb-40">
+        <!-- Deal of the day section starts here  -->
+        <section>
+            <div class="flex flex-col md:flex-row justify-between text-center lg:text-left p-5 mb-10">
+                <div class="lg:w-[600px] mb-5">
+                    <h3 class="text-5xl font-bold mb-6">Deal of the day</h3>
+                    <p class="text-yash-color">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- countdown section  -->
+                <div class="grid grid-flow-col gap-5 text-center justify-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:40;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+            </div>
+            <!-- All card here  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-5">
+                <!-- First card  -->
+                <div class="card bg-base-100 shadow-xl text-center py-5 px-10">
+                    <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body space-y-5">
 
+                      <h2 class=" text-2xl font-bold">12.90$ - 18.85$</h2>
+
+                      <hr>
+
+                      <p class="text-yash-color">Apples</p>
+
+                      <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+
+                      <p class="text-pink-color font-bold">Details</p>
+
+                    </div>
+                  </div>
+                <!-- second card  -->
+                <div class="card bg-base-100 shadow-xl text-center py-5 px-10">
+                    <figure><img src="images/fruit7.png" alt="Shoes" /></figure>
+                    <div class="card-body space-y-5">
+
+                      <h2 class=" text-2xl font-bold">11.90$ - 15.85$</h2>
+
+                      <hr>
+
+                      <p class="text-yash-color">Orange</p>
+
+                      <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+
+                      <p class="text-pink-color font-bold">Details</p>
+
+                    </div>
+                  </div>
+                <!-- third card  -->
+                <div class="card bg-base-100 shadow-xl text-center py-5 px-10">
+                    <figure><img src="images/fruit8.png" alt="Shoes" /></figure>
+                    <div class="card-body space-y-5">
+
+                      <h2 class=" text-2xl font-bold">12.90$ - 18.85$</h2>
+
+                      <hr>
+
+                      <p class="text-yash-color">Red Dragon</p>
+
+                      <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+
+                      <p class="text-pink-color font-bold">Details</p>
+
+                    </div>
+                  </div>
+                <!-- Fourth card  -->
+                <div class="card bg-base-100 shadow-xl text-center py-5 px-10">
+                    <figure><img src="images/fruit9.png" alt="Shoes" /></figure>
+                    <div class="card-body space-y-5">
+
+                      <h2 class=" text-2xl font-bold">12.90$ - 18.85$</h2>
+
+                      <hr>
+
+                      <p class="text-yash-color">Banana</p>
+
+                      <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+
+                      <p class="text-pink-color font-bold">Details</p>
+
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <!-- Deal of the day section starts here  -->
     </main>
 
 </body>
